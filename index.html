@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weeknd</title>
+    
+    <link rel="icon" type="image/jpg" href="Flames.jpg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="page-title">Weeknd</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">So</a></li>
+                <li><a href="#">Just</a></li>
+                <li><a href="#">Have</a></li>
+                <li><a href="#">Faith</a></li>
+            </ul>
+        </nav>
+         <!-- Night Mode Switch -->
+    <button id="theme-toggle" class="theme-toggle">🌙 Night Mode</button>
+    </header>
+
+    <section class="news-grid">
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <h3>I</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...
+            </p>
+            <a href="article1.html">Read More</a>
+        </article>
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <h3>Cant't</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...
+                </p>
+            <a href="article1.html">Read More</a>
+        </article>
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <h3>Wait to</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...</p>
+            <a href="article1.html">Read More</a>
+        </article>
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <h3>See</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...</p>
+            <a href="article1.html">Read More</a>
+        </article>
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop ></video>
+            <h3>Your</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...</p>
+            <a href="article1.html">Read More</a>
+        </article>
+        <article>
+            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <h3>Face</h3>
+            <p>It's indescribable
+            
+                Ooh-ooh-ooh (indescribable), oh
+                Ooh-ooh-ooh-ooh...</p>
+            <a href="article1.html">Read More</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Indescribable</p>
+    </footer>
+    
+    <script>
+        // Theme toggle logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+    
+        // Load the saved theme
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggleBtn.textContent = '☀️ Light Mode';
+        }
+    
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            // Update button text
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggleBtn.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggleBtn.textContent = '🌙 Night Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    
+</body>
+</html>

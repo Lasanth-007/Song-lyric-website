@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 20px;
+
+}
+
+nav ul li a:hover {
+    background-color: rgb(142, 60, 164);
+    text-decoration: none;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.news-grid article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.news-grid video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-grid h3 {
+    margin: 1rem 0;
+}
+
+.news-grid p {
+    font-size: 0.9rem;
+}
+
+.news-grid a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.news-grid a:hover {
+    background-color:rgb(59, 153, 165);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-article {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.news-article video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.news-article h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.news-article p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.page-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    color: #2e1212;
+}
+
+pre{
+    font-family: Arial, sans-serif;
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
+}
+
+footer.dark-mode {
+    background-color: #1e1e1e;
+}
+
+/* Toggle button styling */
+.theme-toggle {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #ccc;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background-color: #444;
+}
+
+body.dark-mode .page-title {
+    color: rgb(59, 153, 165);
+}
+body.dark-mode .news-grid article {
+    background-color: #1e1e1e; /* Dark background for articles in dark mode */
+    color: #e0e0e0; /* Light text color for articles */
+}
+
+body.dark-mode .news-grid a {
+    background-color: #333; /* Dark background for links in dark mode */
+    color: #e0e0e0; /* Light text color for links */
+}
+
+body.dark-mode .news-grid a:hover {
+    background-color: rgb(59, 153, 165); /* Keep the same hover color for consistency */
+}
