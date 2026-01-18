@@ -17,10 +17,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">So</a></li>
-                <li><a href="#">Just</a></li>
-                <li><a href="#">Have</a></li>
-                <li><a href="#">Faith</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Hurry</a></li>
+                <li><a href="#">Up</a></li>
+                <li><a href="#">Tomoorow</a></li>
             </ul>
         </nav>
          <!-- Night Mode Switch -->
@@ -29,68 +29,81 @@
 
     <section class="news-grid">
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop></video>
-            <h3>I</h3>
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>            
+            <h3>Dancing In The Flames</h3>
             <p>It's indescribable
             
-                Ooh-ooh-ooh (indescribable), oh
-                Ooh-ooh-ooh-ooh...
+                Ooh-ooh-ooh (indescribable)...
             </p>
             <a href="article1.html">Read More</a>
         </article>
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop></video>
-            <h3>Cant't</h3>
-            <p>It's indescribable
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>            
+            <h3>Babtized In Fear</h3>
+            <p>heartbeat slower,
             
-                Ooh-ooh-ooh (indescribable), oh
-                Ooh-ooh-ooh-ooh...
+                Voices'll tell me 
+                that I should carry on...
                 </p>
-            <a href="article1.html">Read More</a>
+            <a href="article2.html">Read More</a>
         </article>
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop></video>
-            <h3>Wait to</h3>
-            <p>It's indescribable
-            
-                Ooh-ooh-ooh (indescribable), oh
-                Ooh-ooh-ooh-ooh...</p>
-            <a href="article1.html">Read More</a>
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>            
+            <h3>Open Hearts</h3>
+            <p>It's never easy... falling in love again
+                Falling in, falling in love...
+                </p>
+            <a href="article3.html">Read More</a>
         </article>
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>
             <h3>See</h3>
             <p>It's indescribable
             
                 Ooh-ooh-ooh (indescribable), oh
                 Ooh-ooh-ooh-ooh...</p>
-            <a href="article1.html">Read More</a>
+            <a href="article4.html">Read More</a>
         </article>
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop ></video>
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>            
             <h3>Your</h3>
             <p>It's indescribable
             
                 Ooh-ooh-ooh (indescribable), oh
                 Ooh-ooh-ooh-ooh...</p>
-            <a href="article1.html">Read More</a>
+            <a href="article5.html">Read More</a>
         </article>
         <article>
-            <video src="Indescribable.mp4" controls autoplay muted loop></video>
+            <video src="Indescribable.mp4" class="hover-video" muted loop></video>
             <h3>Face</h3>
             <p>It's indescribable
             
                 Ooh-ooh-ooh (indescribable), oh
                 Ooh-ooh-ooh-ooh...</p>
-            <a href="article1.html">Read More</a>
+            <a href="article6.html">Read More</a>
         </article>
     </section>
 
     <footer>
-        <p>&copy; 2024 Indescribable</p>
+        <p>&copy; 2026 Indescribable</p>
     </footer>
     
     <script>
+
+    
+        // Find all videos with the class 'hover-video'
+        const videos = document.querySelectorAll('.hover-video');
+
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => {
+            video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+            video.pause();
+            });
+        });
+
         // Theme toggle logic
         const themeToggleBtn = document.getElementById('theme-toggle');
         const currentTheme = localStorage.getItem('theme');
