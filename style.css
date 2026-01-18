@@ -187,15 +187,22 @@ body.dark-mode .page-title {
     color: rgb(59, 153, 165);
 }
 body.dark-mode .news-grid article {
-    background-color: #1e1e1e; /* Dark background for articles in dark mode */
-    color: #e0e0e0; /* Light text color for articles */
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
 }
 
 body.dark-mode .news-grid a {
-    background-color: #333; /* Dark background for links in dark mode */
-    color: #e0e0e0; /* Light text color for links */
+    background-color: #333; 
+    color: #e0e0e0; 
 }
 
 body.dark-mode .news-grid a:hover {
-    background-color: rgb(59, 153, 165); /* Keep the same hover color for consistency */
+    background-color: rgb(59, 153, 165); 
+}
+
+.lyrics {
+  white-space: pre-line;    
+  margin: 0;                 
+  padding: 0.8em 1em;        
+  line-height: 1.4;        
 }
