@@ -201,8 +201,18 @@ body.dark-mode .news-grid a:hover {
 }
 
 .lyrics {
-  white-space: pre-line;    
-  margin: 0;                 
-  padding: 0.8em 1em;        
-  line-height: 1.4;        
+  white-space: pre-wrap;       /* Preserves newlines + allows wrapping if lines are too long */
+  /* OR use: white-space: pre-line;  ← collapses multiple spaces but keeps single newlines */
+  margin: 0;
+  padding: 1rem;               /* Breathing room around the text */
+  line-height: 1.5;            /* Makes it easier to read vertically */
+  font-size: 1.05rem;          /* Slightly bigger for mobile readability */
+  text-align: left;            /* Or center if you prefer poetic look */
+  word-wrap: break-word;       /* Prevents super-long words from overflowing */
+}
+
+/* Optional: Make chorus bolder or italic for visual separation */
+.lyrics .chorus {
+  font-weight: 600;
+  font-style: italic;
 }
