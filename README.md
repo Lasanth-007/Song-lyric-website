@@ -1,6 +1,6 @@
 # Song Lyrics Website
 
-Simple static site built with HTML & CSS to display song lyrics.
+Simple static site built with HTML, CSS & Java Script to display song lyrics.
 
 ## Live Demo
 https://lasanth-007.github.io/Song-lyric-website/
