@@ -82,46 +82,7 @@
         <p>&copy; 2026 Indescribable</p>
     </footer>
     
-    <script>
+    <script src="script.js"></script>
 
-    
-        // Find all videos with the class 'hover-video'
-        const videos = document.querySelectorAll('.hover-video');
-
-        videos.forEach(video => {
-            video.addEventListener('mouseenter', () => {
-            video.play();
-            });
-
-            video.addEventListener('mouseleave', () => {
-            video.pause();
-            });
-        });
-
-        // Theme toggle logic
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const currentTheme = localStorage.getItem('theme');
-    
-        // Load the saved theme
-        if (currentTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            themeToggleBtn.textContent = '☀️ Light Mode';
-        }
-    
-        // Toggle theme on button click
-        themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            
-            // Update button text
-            if (document.body.classList.contains('dark-mode')) {
-                themeToggleBtn.textContent = '☀️ Light Mode';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                themeToggleBtn.textContent = '🌙 Night Mode';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
-    
 </body>
 </html>

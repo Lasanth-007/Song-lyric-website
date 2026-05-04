@@ -216,3 +216,64 @@ body.dark-mode .news-grid a:hover {
   font-weight: 600;
   font-style: italic;
 }
+/* =========================
+   SEARCH BAR (TOP)
+========================= */
+.search-bar {
+    width: 60%;
+    max-width: 400px;
+    margin: 1.5rem auto 0.5rem auto;
+    display: block;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: rgb(59, 153, 165);
+    box-shadow: 0 0 8px rgba(59, 153, 165, 0.5);
+}
+
+
+.last-song {
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto 1rem auto;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #222, #333);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.last-song p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.last-song a {
+    color: rgb(59, 153, 165);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.last-song a:hover {
+    text-decoration: underline;
+    color: #00e5ff;
+}
+
+body.dark-mode .search-bar {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .last-song {
+    background: linear-gradient(135deg, #111, #1e1e1e);
+}
