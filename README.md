@@ -84,9 +84,10 @@ This project helped in understanding how to:
 ---
 
 ## 📸 Preview
-
-*(Add screenshots here for better presentation)*
-
+* Home page
+![alt text](image.png)
+* Lyric page
+![alt text](image-1.png)
 ---
 
 ## 👨‍💻 Author
