@@ -46,19 +46,6 @@ This project reflects core JavaScript fundamentals:
 * Array Iteration (`forEach`)
 * Conditional Rendering
 
----
-
-## 📁 Project Structure
-
-```
-project-folder/
-│
-├── index.html
-├── article1.html ... article6.html
-├── style.css
-├── script.js
-├── /media (videos, images)
-```
 
 ---
 
